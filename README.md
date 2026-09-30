@@ -74,6 +74,17 @@ Downloads the **Native Access 2** Windows installer, extracts core payloads (`ap
 ./install_native_access.sh /path/to/native_access_setup.exe
 ```
 
+### 6. Musio (`install_musio.sh`)
+Downloads the **Musio** Windows installer package to `/tmp/`, installs it silently using Wine's Windows Installer service (`cheapwine run msiexec /i "musio_installer.msi" /qn /norestart`), and registers/exports the application launcher via Cheapwine if present.
+
+```bash
+# Install using default download path (/tmp/musio_installer.msi)
+./install_musio.sh
+
+# Or install from/to a specific installer path
+./install_musio.sh /path/to/musio_installer.msi
+```
+
 ---
 
 ## ⚡ Features
