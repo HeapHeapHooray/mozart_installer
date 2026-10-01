@@ -85,6 +85,17 @@ Downloads the **Musio** Windows installer package to `/tmp/`, installs it silent
 ./install_musio.sh /path/to/musio_installer.msi
 ```
 
+### 7. LibreWave Rhapsody (`install_rhapsody.sh`)
+Downloads the **LibreWave Rhapsody** sample player Windows installer from LibreWave / GitHub Releases, installs it silently (`cheapwine run "$INSTALLER_PATH" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-`), and registers/exports the application launcher via Cheapwine if present.
+
+```bash
+# Install using default download path (/tmp/rhapsody_installer.exe)
+./install_rhapsody.sh
+
+# Or install from/to a specific installer path
+./install_rhapsody.sh /path/to/rhapsody_installer.exe
+```
+
 ---
 
 ## ⚡ Features
