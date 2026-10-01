@@ -97,7 +97,7 @@ Downloads the **LibreWave Rhapsody** sample player Windows installer from LibreW
 ```
 
 ### 8. ACE Studio (`install_ace.sh`)
-Downloads the **ACE Studio** Windows installer (`.exe`) via Mozart Downloader, installs it silently (`cheapwine run "$INSTALLER_PATH" /SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NOCANCEL`), and registers/exports the application launcher via Cheapwine if present.
+Downloads the **ACE Studio** Windows installer (`.exe`) via Mozart Downloader, installs it silently (`cheapwine run "$INSTALLER_PATH" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NOCANCEL`), and registers/exports the application launcher via Cheapwine if present.
 
 ```bash
 # Install using default download path (/tmp/ace_installer.exe)
