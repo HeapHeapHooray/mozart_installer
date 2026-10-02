@@ -119,4 +119,7 @@ fi
 cheapwine add "FL Studio" FL64
 cheapwine export "FL Studio"
 
+cheapwine add "FL Cloud Plugins" --uri-scheme "fl-cloud-plugins"
+cheapwine export "FL Cloud Plugins"
+
 echo -e "\n${GREEN}=== FL Studio installed and exported successfully! ===${NC}"
